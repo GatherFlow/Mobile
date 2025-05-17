@@ -1,0 +1,15 @@
+{
+  "tabs": {
+    "home": "Головна",
+    "flow": "Потік",
+    "profile": "Профіль"
+  },
+  "onboarding": {
+    "sign-up": "Зареєструватися",
+    "continue-with-google": "Продовжити Google",
+    "login": "Увійти"
+  },
+  "example": {
+    "change-language": "Змінити мову"
+  }
+}
