@@ -6,6 +6,7 @@ import { DiamondPlus } from '@/lib/icons/DiamondPlus'
 import { CircleUser } from '@/lib/icons/CircleUser'
 import { useTranslation } from "react-i18next";
 import { useColorScheme } from "@/lib/useColorScheme";
+import TabBar from '@/components/ui/TabBar';
 
 export default function TabsLayout() {
   const { t } = useTranslation()
@@ -17,6 +18,7 @@ export default function TabsLayout() {
 
   return (
     <Tabs
+    tabBar={(props) => <TabBar {...props} />}
       screenOptions={{
         tabBarActiveTintColor: '#ffd06b',
         tabBarInactiveTintColor: getInactiveTintColor(),
