@@ -1,14 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
 import { BigIcon } from '@/components/ui/bigIcon'
-import { OTPInputGroup } from '@/components/ui/otpInputGroup'
-import { Link } from '@/components/ui/link'
 import { Button } from '@/components/ui/button'
-import Lock from '@/lib/icons/lock.svg';
+import { linkTextVariants } from '@/components/ui/link'
+import { OTPInputGroup } from '@/components/ui/otpInputGroup'
 import { Default } from '@/components/ui/typography'
+import Lock from '@/lib/icons/lock.svg'
 import { Stack, router } from 'expo-router'
-import { useTranslation } from 'react-i18next';
-import { BACKLESS_STACK_OPTION } from '@/constants'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { Text, View } from 'react-native'
 
 export default function Verify() {
 	const { t } = useTranslation();
@@ -31,7 +30,7 @@ export default function Verify() {
             <OTPInputGroup />
             <View className="flex-row justify-center items-center">
               <Default className="text-muted-foreground">{t('verify.didNotGetCode')}</Default>
-              <Link>{t('verify.resend')}</Link>
+              <Text className={linkTextVariants()}>{t('verify.resend')}</Text>
             </View>
           </View>
         </View>

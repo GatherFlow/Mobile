@@ -52,15 +52,10 @@ export default function Signup() {
           </Button>
           <View className="flex-row justify-center items-center">
             <Default className='text-muted-foreground'>{t('signup.alreadyHaveAccount')}</Default>
-            <Link
-              href="/login"
-              variant="default" 
-            >
-              {t('signup.loginLink')}
-            </Link>
+            <Link href="/login">{t('signup.loginLink')}</Link>
           </View>
         </View>
-
+        
       </View>
     </React.Fragment>
   )

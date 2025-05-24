@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { Text, Pressable, Linking, View } from 'react-native';
-import { router } from 'expo-router';
 import { TextClassContext } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
+import { Link as ExpoLink, LinkProps as ExpoLinkProps } from 'expo-router';
+import * as React from 'react';
+import { Text } from 'react-native';
 
-const linkTextVariants = cva('text-[14px]', {
+const linkTextVariants = cva('text-sm', {
   variants: {
     variant: {
       default: 'underline text-muted-foreground',
@@ -17,44 +17,19 @@ const linkTextVariants = cva('text-[14px]', {
   },
 });
 
-type LinkProps = {
-  href?: string;
-  children: React.ReactNode;
-  className?: string;
-  icon?: React.ReactNode;
-} & React.ComponentPropsWithoutRef<typeof Pressable> &
-  VariantProps<typeof linkTextVariants>;
+type LinkProps = ExpoLinkProps & VariantProps<typeof linkTextVariants> & React.PropsWithChildren
 
-const Link = React.forwardRef<React.ElementRef<typeof Pressable>, LinkProps>(
-  ({ href, children, className, icon, variant, ...props }, ref) => {
-    
-    const handlePress = async () => {
-      if (typeof href === 'string' && href) {
-        if (href.startsWith('http')) {
-          const supported = await Linking.canOpenURL(href);
-          if (supported) {
-            await Linking.openURL(href);
-          }
-        } else {
-          router.push(href as any); 
-        }
-      }
-    };
+const Link: React.FC<LinkProps> = ({ children, className, variant, ...props }) => {
+  const textStyle = cn(linkTextVariants({ variant }), className);
 
-    const textStyle = cn(linkTextVariants({ variant }), className);
-
-    return (
-      <TextClassContext.Provider value={textStyle}>
-        <Pressable onPress={handlePress} ref={ref} {...props}>
-          <View className="flex-row items-center gap-x-2">
-            {icon}
-            <Text className={textStyle}>{children}</Text>
-          </View>
-        </Pressable>
-      </TextClassContext.Provider>
-    );
-  }
-);
+  return (
+    <TextClassContext.Provider value={textStyle}>
+      <ExpoLink {...props}>
+        <Text className={textStyle}>{children}</Text>
+      </ExpoLink>
+    </TextClassContext.Provider>
+  );
+}
 
 Link.displayName = 'Link';
 

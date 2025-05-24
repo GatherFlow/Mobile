@@ -1,19 +1,15 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { Input } from '@/components/ui/input'
-import { Link as ALink } from '@/components/ui/link'
+import { Link } from '@/components/ui/link'
 import { Button } from '@/components/ui/button'
 import { Accent, Default } from '@/components/ui/typography'
-import { Link, Stack, router } from 'expo-router'
+import { Link as ExpoLink, Stack, router } from 'expo-router'
 import { useTranslation } from 'react-i18next';
 import { BACKLESS_STACK_OPTION } from '@/constants'
 
 export default function LoginView() {
 	const { t } = useTranslation();
-  
-	const handlePasswordRecovery = async() => {
-		router.push('/(auth)/forgot-password/email')
-	}
 
 	return (
     <React.Fragment>
@@ -31,15 +27,15 @@ export default function LoginView() {
             </View>
           </View>
           <View className="items-end">
-            <ALink onPress={handlePasswordRecovery}>{t('login.forgotPasswordLink')}</ALink>
+            <Link href="/(auth)/forgot-password/email">{t('login.forgotPasswordLink')}</Link>
           </View>
         </View>
         <View className="gap-y-4">
-          <Link href="/" push asChild>
+          <ExpoLink href="/" push asChild>
             <Button>
               <Text>{t('login.loginButton')}</Text>
             </Button>
-          </Link>
+          </ExpoLink>
           <View className="flex-row justify-center items-center">
             <Default className="text-muted-foreground">{t('login.noAccount')}</Default>
             <Link href="/signup">{t('login.signUpLink')}</Link>

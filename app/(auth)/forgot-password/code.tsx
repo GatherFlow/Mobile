@@ -7,7 +7,7 @@ import { View, Text } from "react-native";
 import Lock from '@/lib/icons/lock.svg'
 import { OTPInputGroup } from "@/components/ui/otpInputGroup";
 import { Default } from "@/components/ui/typography";
-import { Link } from "@/components/ui/link";
+import { Link, linkTextVariants } from "@/components/ui/link";
 import { Button } from "@/components/ui/button";
 
 export default function recovery() {
@@ -31,7 +31,7 @@ export default function recovery() {
             <OTPInputGroup />
             <View className="flex-row justify-center items-center">
               <Default className="text-muted-foreground">{t('forgotPasswordCode.didNotGetCode')}</Default>
-              <Link>{t('forgotPasswordCode.resend')}</Link>
+              <Text className={linkTextVariants()}>{t('forgotPasswordCode.resend')}</Text>
             </View>
           </View>
         </View>
