@@ -32,7 +32,7 @@ export default function OnboardingScreen() {
               <Text className="text-foreground">{t('onboarding.continue-with-google')}</Text>
             </Button>
           </Link>
-          <Link href="/login" push asChild>
+          <Link href="/(auth)/login" push asChild>
             <Button variant="ghost">
               <Text className="text-foreground">{t('onboarding.login')}</Text>
             </Button>

@@ -6,16 +6,18 @@ import { Button } from '@/components/ui/button'
 import { Accent, Default } from '@/components/ui/typography'
 import { Link, Stack, router } from 'expo-router'
 import { useTranslation } from 'react-i18next';
+import { BACKLESS_STACK_OPTION } from '@/constants'
 
-export default function login() {
+export default function LoginView() {
 	const { t } = useTranslation();
+  
 	const handlePasswordRecovery = async() => {
-		router.push('/forgotPassword-email')
+		router.push('/(auth)/forgot-password/email')
 	}
 
 	return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('login.title'), headerLeft: () => null, headerBackVisible: false}} />
+      <Stack.Screen options={{ title: t('login.title'), ...BACKLESS_STACK_OPTION }} />
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
         <View className="gap-1">
           <View className="gap-y-4">
@@ -40,7 +42,7 @@ export default function login() {
           </Link>
           <View className="flex-row justify-center items-center">
             <Default className="text-muted-foreground">{t('login.noAccount')}</Default>
-            <Link href={'/signup'}>{t('login.signUpLink')}</Link>
+            <Link href="/signup">{t('login.signUpLink')}</Link>
           </View>
         </View>
       </View>

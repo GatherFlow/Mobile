@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/components/ui/link';
 import { Accent, Default } from '@/components/ui/typography';
+import { BACKLESS_STACK_OPTION } from '@/constants'
 
 export default function Signup() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export default function Signup() {
   
   return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('signup.title'), headerLeft: () => null, headerBackVisible: false, }} /> 
+      <Stack.Screen options={{ title: t('signup.title'), ...BACKLESS_STACK_OPTION }} /> 
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
 
         <View className="gap-y-4">

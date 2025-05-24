@@ -1,17 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Accent } from '@/components/ui/typography'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { useTranslation } from 'react-i18next';
-import { Link, Stack } from 'expo-router'
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Accent } from "@/components/ui/typography";
+import { Link, Stack } from "expo-router";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Text, View } from "react-native";
 
-export default function changePassword() {
+export default function ChangePasswordView() {
   const { t } = useTranslation();
 
   return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('changePassword.title'), headerLeft: () => null, headerBackVisible: false }} />
+      <Stack.Screen options={{ title: t('changePassword.title'), headerBackTitle: t('stack.back') }} />
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
         <View className="gap-1">
           <View className="gap-y-4">

@@ -1,4 +1,7 @@
 {
+  "stack": {
+    "back": "Back"
+  },
   "tabs": {
     "home": "Home",
     "flow": "Flow",
