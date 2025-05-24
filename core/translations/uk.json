@@ -1,0 +1,71 @@
+{
+  "stack": {
+    "back": "Назад"
+  },
+  "tabs": {
+    "home": "Головна",
+    "flow": "Потік",
+    "profile": "Профіль"
+  },
+  "onboarding": {
+    "sign-up": "Зареєструватися",
+    "continue-with-google": "Продовжити Google",
+    "login": "Увійти"
+  },
+  "example": {
+    "change-language": "Змінити мову"
+  },
+  "signup": {
+    "title": "Реєстрація",
+    "firstNameLabel": "Ім'я",
+    "firstNamePlaceholder": "Введіть ім'я",
+    "lastNameLabel": "Прізвище",
+    "lastNamePlaceholder": "Введіть прізвище",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "Введіть вашу ел. пошту",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Введіть ваш пароль",
+    "confirmPasswordLabel": "Підтвердіть пароль",
+    "confirmPasswordPlaceholder": "Підтвердіть ваш пароль",
+    "createAccountButton": "Створити акаунт",
+    "alreadyHaveAccount": "Вже маєте акаунт? ",
+    "loginLink": "Увійти"
+  },
+  "verify": {
+    "title": "Підтвердження",
+    "didNotGetCode": "Не отримали код? ",
+    "resend": "Надіслати знову",
+    "verifyButton": "Підтвердити"
+  },
+  "login": {
+    "title": "Вхід",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "Введіть вашу ел. пошту",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Введіть ваш пароль",
+    "forgotPasswordLink": "Забули пароль?",
+    "loginButton": "Увійти",
+    "noAccount": "Немає акаунту? ",
+    "signUpLink": "Зареєструватися"
+  },
+  "forgotPasswordEmail": {
+    "title": "Забули пароль",
+    "emailLabel": "Електронна пошта",
+    "emailPlaceholder": "Введіть вашу ел. пошту",
+    "sendCodeButton": "Надіслати код відновлення"
+  },
+  "forgotPasswordCode": {
+    "title": "Код відновлення",
+    "didNotGetCode": "Не отримали код? ",
+    "resend": "Надіслати знову",
+    "verifyButton": "Підтвердити"
+  },
+  "changePassword": {
+    "title": "Зміна паролю",
+    "passwordLabel": "Новий пароль",
+    "passwordPlaceholder": "Введіть новий пароль",
+    "confirmPasswordLabel": "Підтвердіть новий пароль",
+    "confirmPasswordPlaceholder": "Підтвердіть ваш новий пароль",
+    "changePasswordButton": "Змінити пароль"
+  }
+}

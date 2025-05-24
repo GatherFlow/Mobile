@@ -1,12 +1,12 @@
 import '@/global.css';
 
 import { Tabs } from "expo-router";
-import { Home } from '@/lib/icons/Home'
-import { DiamondPlus } from '@/lib/icons/DiamondPlus'
-import { CircleUser } from '@/lib/icons/CircleUser'
+import { Home } from '@/core/lib/icons/Home'
+import { DiamondPlus } from '@/core/lib/icons/DiamondPlus'
+import { CircleUser } from '@/core/lib/icons/CircleUser'
 import { useTranslation } from "react-i18next";
-import { useColorScheme } from "@/lib/useColorScheme";
-import TabBar from '@/components/ui/TabBar';
+import { useColorScheme } from "@/core/lib/useColorScheme";
+import TabBar from '@/core/components/ui/TabBar';
 
 export default function TabsLayout() {
   const { t } = useTranslation()

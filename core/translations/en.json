@@ -1,0 +1,71 @@
+{
+  "stack": {
+    "back": "Back"
+  },
+  "tabs": {
+    "home": "Home",
+    "flow": "Flow",
+    "profile": "Profile"
+  },
+  "onboarding": {
+    "sign-up": "Sign up",
+    "continue-with-google": "Continue with Google",
+    "login": "Login"
+  },
+  "example": {
+    "change-language": "Change language"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Enter last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmPasswordLabel": "Confirm password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "createAccountButton": "Create an account",
+    "alreadyHaveAccount": "Already have an account? ",
+    "loginLink": "Login"
+  },
+  "verify": {
+    "title": "Verification",
+    "didNotGetCode": "Didn't get a code? ",
+    "resend": "Resend",
+    "verifyButton": "Verify"
+  },
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPasswordLink": "Forgot password?",
+    "loginButton": "Login",
+    "noAccount": "Don't have an account? ",
+    "signUpLink": "Sign up"
+  },
+  "forgotPasswordEmail": {
+    "title": "Forgot Password",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "sendCodeButton": "Send recovery code"
+  },
+  "forgotPasswordCode": {
+    "title": "Recovery Code",
+    "didNotGetCode": "Didn't get a code? ",
+    "resend": "Resend",
+    "verifyButton": "Verify"
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "passwordLabel": "New password",
+    "passwordPlaceholder": "Enter new password",
+    "confirmPasswordLabel": "Confirm new password",
+    "confirmPasswordPlaceholder": "Confirm your new password",
+    "changePasswordButton": "Change Password"
+  }
+}
