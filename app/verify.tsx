@@ -8,6 +8,7 @@ import Lock from '@/lib/icons/lock.svg';
 import { Default } from '@/components/ui/typography'
 import { Stack, router } from 'expo-router'
 import { useTranslation } from 'react-i18next';
+
 export default function verify() {
 	const { t } = useTranslation();
 	const handleVerification = async() =>{
@@ -16,7 +17,7 @@ export default function verify() {
 
 	return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('verify.title') }} />
+      <Stack.Screen options={{ title: t('verify.title'), headerLeft: () => null, headerBackVisible: false }} />
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
         <View>
           <View className="items-center pb-8">

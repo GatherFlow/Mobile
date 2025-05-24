@@ -8,6 +8,7 @@ import { Link } from '@/components/ui/link'
 import { Button } from '@/components/ui/button'
 import { Stack, router } from 'expo-router'
 import { useTranslation } from 'react-i18next';
+
 export default function recovery() {
 	const { t } = useTranslation();
 	const handleVerification = async() =>{
@@ -16,7 +17,7 @@ export default function recovery() {
 
 	return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('forgotPasswordCode.title') }} />
+      <Stack.Screen options={{ title: t('forgotPasswordCode.title'), headerLeft: () => null, headerBackVisible: false }} />
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
         <View>
           <View className="items-center pb-8">

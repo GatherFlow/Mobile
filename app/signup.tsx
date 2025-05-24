@@ -16,7 +16,7 @@ export default function Signup() {
   
   return (
     <React.Fragment>
-      <Stack.Screen options={{ headerShown: true, title: t('signup.title') }} /> 
+      <Stack.Screen options={{ title: t('signup.title'), headerLeft: () => null, headerBackVisible: false, }} /> 
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
 
         <View className="gap-y-4">

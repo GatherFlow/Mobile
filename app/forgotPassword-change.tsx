@@ -4,12 +4,14 @@ import { Accent } from '@/components/ui/typography'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { useTranslation } from 'react-i18next';
-import { Stack } from 'expo-router'
+import { Link, Stack } from 'expo-router'
+
 export default function changePassword() {
   const { t } = useTranslation();
+
   return (
     <React.Fragment>
-      <Stack.Screen options={{ title: t('changePassword.title') }} />
+      <Stack.Screen options={{ title: t('changePassword.title'), headerLeft: () => null, headerBackVisible: false }} />
       <View className="flex-1 justify-between pt-[60px] pb-10 px-8">
         <View className="gap-1">
           <View className="gap-y-4">
@@ -23,9 +25,11 @@ export default function changePassword() {
             </View>
           </View>
         </View>
-        <Button>
-          <Text>{t('changePassword.changePasswordButton')}</Text>
-        </Button>
+        <Link href="/" push asChild>
+          <Button>
+            <Text>{t('changePassword.changePasswordButton')}</Text>
+          </Button>
+        </Link>
       </View>
     </React.Fragment>
   );
