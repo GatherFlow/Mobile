@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View } from 'react-native';
-import { cn } from '~/lib/utils';
+import { cn } from '@/lib/utils';
 
 type BigIconProps = React.ComponentPropsWithoutRef<typeof View>;
 

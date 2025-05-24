@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Text, Pressable, Linking, View } from 'react-native';
 import { router } from 'expo-router';
-import { TextClassContext } from '~/components/ui/text';
-import { cn } from '~/lib/utils';
+import { TextClassContext } from '@/components/ui/text';
+import { cn } from '@/lib/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 const linkTextVariants = cva('text-[14px]', {
@@ -18,7 +18,7 @@ const linkTextVariants = cva('text-[14px]', {
 });
 
 type LinkProps = {
-  href: string;
+  href?: string;
   children: React.ReactNode;
   className?: string;
   icon?: React.ReactNode;
@@ -29,13 +29,15 @@ const Link = React.forwardRef<React.ElementRef<typeof Pressable>, LinkProps>(
   ({ href, children, className, icon, variant, ...props }, ref) => {
     
     const handlePress = async () => {
-      if (href.startsWith('http')) {
-        const supported = await Linking.canOpenURL(href);
-        if (supported) {
-          await Linking.openURL(href);
+      if (typeof href === 'string' && href) {
+        if (href.startsWith('http')) {
+          const supported = await Linking.canOpenURL(href);
+          if (supported) {
+            await Linking.openURL(href);
+          }
+        } else {
+          router.push(href as any); 
         }
-      } else {
-        router.push(href as any); 
       }
     };
 
