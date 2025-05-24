@@ -1,9 +1,9 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 import { View, TextInput, Pressable, type TextInputProps } from 'react-native';
-import { cn } from '@/lib/utils';
-import { Eye } from '@/lib/icons/Eye'; 
-import { EyeClosed } from '@/lib/icons/EyeClosed';
+import { cn } from '@/core/lib/utils';
+import { Eye } from '@/core/lib/icons/Eye'; 
+import { EyeClosed } from '@/core/lib/icons/EyeClosed';
 
 const inputVariants = cva(
   'h-[40px] rounded-[10px] border border-input shadow-sm shadow-black/15 bg-background px-[10px] text-sm text-foreground placeholder:text-muted-foreground text-justify focus:outline-none focus:border-primary ',

@@ -1,14 +1,14 @@
-import { BigIcon } from "@/components/ui/bigIcon";
-import { BACKLESS_STACK_OPTION } from "@/constants";
+import { BigIcon } from "@/core/components/ui/bigIcon";
+import { BACKLESS_STACK_OPTION } from "@/core/constants";
 import { Stack, router } from "expo-router";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { View, Text } from "react-native";
-import Lock from '@/lib/icons/lock.svg'
-import { OTPInputGroup } from "@/components/ui/otpInputGroup";
-import { Default } from "@/components/ui/typography";
-import { Link, linkTextVariants } from "@/components/ui/link";
-import { Button } from "@/components/ui/button";
+import Lock from '@/core/lib/icons/lock.svg'
+import { OTPInputGroup } from "@/core/components/ui/otpInputGroup";
+import { Default } from "@/core/components/ui/typography";
+import { Link, linkTextVariants } from "@/core/components/ui/link";
+import { Button } from "@/core/components/ui/button";
 
 export default function recovery() {
 	const { t } = useTranslation();

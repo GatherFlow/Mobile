@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { View, TextInput } from 'react-native';
-import { Input } from './input';
+import { Input } from './deprecated-input';
 
 type OTPInputGroupProps = {
   length?: number;

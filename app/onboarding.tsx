@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/core/components/ui/button";
 import { Link, Stack } from "expo-router";
 import React from "react";
 import { View, Text } from "react-native";
-import Logo from '@/assets/logo.svg'
+import Logo from '@/core/assets/logo.svg'
 import { useTranslation } from "react-i18next";
-import { Input } from "@/components/ui/input";
 
 export default function OnboardingScreen() {
   const { t } = useTranslation()

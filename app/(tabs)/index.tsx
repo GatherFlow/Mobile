@@ -1,8 +1,8 @@
-import { ThemeToggle } from '@/components/ThemeToggle';
-import { Button } from '@/components/ui/button';
-import { Text } from '@/components/ui/text';
-import i18n from '@/lib/i18n';
-import { changeLanguage } from '@/lib/i18n/utils';
+import { ThemeToggle } from '@/core/components/ThemeToggle';
+import { Button } from '@/core/components/ui/button';
+import { Text } from '@/core/components/ui/text';
+import i18n from '@/core/lib/i18n';
+import { changeLanguage } from '@/core/lib/i18n/utils';
 import { Link } from 'expo-router';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
