@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Link, router } from 'expo-router';
 import { SettingsListItem } from '@/core/components/ui/settingsListItem';
+import { useTranslation } from 'react-i18next';
 
 import { UserCircle } from '@/core/lib/icons/UserCircle';
 import { AtSign } from '@/core/lib/icons/AtSign';
@@ -13,6 +14,7 @@ import { LogOut } from '@/core/lib/icons/LogOut';
 import { ConfirmModal } from '@/app/settings/confirmModal';
 
 export default function Home() {
+  const { t } = useTranslation();
   const [modalVisible, setModalVisible] = useState(false);
 
   const handleLogoutPress = () => {
@@ -34,35 +36,35 @@ export default function Home() {
         <Link href="/settings/profile" push asChild>
           <SettingsListItem
             icon={<UserCircle size={22} className="text-foreground" />}
-            label="Profile"
+            label={t('homeSettings.profileLabel')}
           />
         </Link>
 
         <Link href="/settings/account" push asChild>
           <SettingsListItem
             icon={<AtSign size={22} className="text-foreground" />}
-            label="Account"
+            label={t('homeSettings.accountLabel')}
           />
         </Link>
 
         <Link href="/settings/privacy" push asChild>
           <SettingsListItem
             icon={<Lock size={22} className="text-foreground" />}
-            label="Privacy"
+            label={t('homeSettings.privacyLabel')}
           />
         </Link>
 
         <Link href="/settings/language" push asChild>
           <SettingsListItem
             icon={<Earth size={22} className="text-foreground" />}
-            label="Language"
+            label={t('homeSettings.languageLabel')}
           />
         </Link>
 
         <Link href="/settings/subscription" push asChild>
           <SettingsListItem
             icon={<Podcast size={22} className="text-foreground" />}
-            label="Subscription"
+            label={t('homeSettings.subscriptionLabel')}
           />
         </Link>
         <SettingsListItem
@@ -71,7 +73,7 @@ export default function Home() {
               <LogOut size={22} className="text-foreground" />
             </View>
           }
-          label="Log out"
+          label={t('homeSettings.logoutLabel')}
           onPress={handleLogoutPress}
         />
 
@@ -79,7 +81,7 @@ export default function Home() {
           visible={modalVisible}
           onClose={handleCancelLogout}
           onConfirm={handleConfirmLogout}
-          message="Are you absolutely sure?"
+          message={t('confirmModal.message')}
         />
       </View>
     </React.Fragment>

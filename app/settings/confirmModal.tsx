@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, View, Text } from 'react-native';
 import { Button } from '@/core/components/ui/button';
 import { TriangleAlert } from '@/core/lib/icons/TriangleAlert';
+import { useTranslation } from 'react-i18next';
 
 interface ConfirmModalProps {
   visible: boolean;
@@ -11,6 +12,7 @@ interface ConfirmModalProps {
 }
 
 export function ConfirmModal({ visible, onClose, onConfirm, message }: ConfirmModalProps) {
+  const { t } = useTranslation();
   return (
     <Modal
       animationType="fade"
@@ -31,14 +33,14 @@ export function ConfirmModal({ visible, onClose, onConfirm, message }: ConfirmMo
               onPress={onClose}
               className="flex-1"
             >
-              <Text className="text-foreground">No</Text>
+              <Text className="text-foreground">{t('confirmModal.noButton')}</Text>
             </Button>
 
             <Button
               onPress={onConfirm}
               className="flex-1"
             >
-              <Text>Yes</Text>
+              <Text>{t('confirmModal.yesButton')}</Text>
             </Button>
           </View>
         </View>
