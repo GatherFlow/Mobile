@@ -67,5 +67,72 @@
     "confirmPasswordLabel": "Підтвердіть новий пароль",
     "confirmPasswordPlaceholder": "Підтвердіть ваш новий пароль",
     "changePasswordButton": "Змінити пароль"
+  },
+  "privacy": {
+    "title": "Конфіденційність",
+    "privateProfileTitle": "Приватний профіль",
+    "privateProfileDescription": "Усі ваші дані не будуть показані іншим користувачам",
+    "hideOwnedTicketsTitle": "Приховати власні квитки",
+    "hideOwnedTicketsDescription": "Квитки не будуть знайдені в пошуку та у вашому профілі",
+    "hidePurchasedTicketsTitle": "Приховати куплені квитки",
+    "hidePurchasedTicketsDescription": "Квитки не будуть знайдені у вашому профілі",
+    "hideAppreciatedTicketsTitle": "Приховати бажані квитки",
+    "hideAppreciatedTicketsDescription": "Квитки не будуть знайдені у вашому профілі"
+  },
+  "language": {
+    "title": "Мова",
+    "english": "Англійська",
+    "ukrainian": "Українська"
+  },
+  "subscription": {
+    "title": "Підписка",
+    "freePlanTitle": "Безкоштовно",
+    "freePlanDescription": "Вам дозволено оголошувати 2 події на місяць",
+    "advancedPlanTitle": "Розширений",
+    "advancedPlanDescription": "Вам дозволено оголошувати 5 подій на місяць",
+    "creatorPlanTitle": "Творець",
+    "creatorPlanDescription": "Вам дозволено оголошувати будь-яку кількість подій на місяць"
+  },
+  "profilePage": {
+    "title": "Профіль",
+    "editPhotoLabel": "Редагувати фото",
+    "socialMediaTitle": "Соціальні мережі",
+    "firstNameLabel": "Ім'я",
+    "lastNameLabel": "Прізвище",
+    "dateOfBirthLabel": "Дата народження",
+    "setDateValue": "Встановити дату",
+    "usernameLabel": "Ім'я користувача",
+    "bioLabel": "Біографія",
+    "addBioValue": "Додати біографію",
+    "linksLabel": "Посилання",
+    "addLinkValue": "Додати посилання",
+    "publicProfileLabel": "Публічний профіль"
+  },
+  "homeSettings": {
+    "title": "Налаштування",
+    "profileLabel": "Профіль",
+    "accountLabel": "Обліковий запис",
+    "privacyLabel": "Конфіденційність",
+    "languageLabel": "Мова",
+    "subscriptionLabel": "Підписка",
+    "logoutLabel": "Вийти"
+  },
+  "accountSettings": {
+    "title": "Обліковий запис",
+    "credentialsTitle": "Облікові дані",
+    "emailLabel": "Електронна пошта",
+    "passwordLabel": "Пароль",
+    "editPasswordValue": "Редагувати пароль",
+    "linksTitle": "Посилання",
+    "googleLabel": "Google",
+    "addGoogleAccountValue": "Додати обліковий запис Google",
+    "paymentsTitle": "Платежі",
+    "cardLabel": "Картка",
+    "addCreditCardValue": "Додати кредитну картку"
+  },
+  "confirmModal": {
+    "message": "Ви абсолютно впевнені?",
+    "noButton": "Ні",
+    "yesButton": "Так"
   }
 }

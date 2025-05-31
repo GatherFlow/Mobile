@@ -67,5 +67,72 @@
     "confirmPasswordLabel": "Confirm new password",
     "confirmPasswordPlaceholder": "Confirm your new password",
     "changePasswordButton": "Change Password"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "privateProfileTitle": "Private profile",
+    "privateProfileDescription": "All your data will not be shown to other users",
+    "hideOwnedTicketsTitle": "Hide owned tickets",
+    "hideOwnedTicketsDescription": "Tickets will not be discovered in search and found in your profile",
+    "hidePurchasedTicketsTitle": "Hide purchased tickets",
+    "hidePurchasedTicketsDescription": "Tickets will not be found in your profile",
+    "hideAppreciatedTicketsTitle": "Hide appreciated tickets",
+    "hideAppreciatedTicketsDescription": "Tickets will not be found in your profile"
+  },
+  "language": {
+    "title": "Language",
+    "english": "English",
+    "ukrainian": "Ukrainian"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "freePlanTitle": "Free",
+    "freePlanDescription": "You are allowed to announce 2 events per month",
+    "advancedPlanTitle": "Advanced",
+    "advancedPlanDescription": "You are allowed to announce 5 events per month",
+    "creatorPlanTitle": "Creator",
+    "creatorPlanDescription": "You are allowed to announce any number of events per month"
+  },
+  "profilePage": {
+    "title": "Profile",
+    "editPhotoLabel": "Edit photo",
+    "socialMediaTitle": "Social media",
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "dateOfBirthLabel": "Date of birth",
+    "setDateValue": "Set date",
+    "usernameLabel": "Username",
+    "bioLabel": "Bio",
+    "addBioValue": "Add bio",
+    "linksLabel": "Links",
+    "addLinkValue": "Add link",
+    "publicProfileLabel": "Public Profile"
+  },
+  "homeSettings": {
+    "title": "Settings",
+    "profileLabel": "Profile",
+    "accountLabel": "Account",
+    "privacyLabel": "Privacy",
+    "languageLabel": "Language",
+    "subscriptionLabel": "Subscription",
+    "logoutLabel": "Log out"
+  },
+  "accountSettings": {
+    "title": "Account",
+    "credentialsTitle": "Credentials",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "editPasswordValue": "Edit password",
+    "linksTitle": "Links",
+    "googleLabel": "Google",
+    "addGoogleAccountValue": "Add Google account",
+    "paymentsTitle": "Payments",
+    "cardLabel": "Card",
+    "addCreditCardValue": "Add credit card"
+  },
+  "confirmModal": {
+    "message": "Are you absolutely sure?",
+    "noButton": "No",
+    "yesButton": "Yes"
   }
 }
