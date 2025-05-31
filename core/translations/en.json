@@ -109,6 +109,7 @@
     "publicProfileLabel": "Public Profile"
   },
   "homeSettings": {
+    "title": "Settings",
     "profileLabel": "Profile",
     "accountLabel": "Account",
     "privacyLabel": "Privacy",
@@ -117,6 +118,7 @@
     "logoutLabel": "Log out"
   },
   "accountSettings": {
+    "title": "Account",
     "credentialsTitle": "Credentials",
     "emailLabel": "Email",
     "passwordLabel": "Password",

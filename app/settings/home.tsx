@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { Link, router } from 'expo-router';
+import { Link, Stack, router } from 'expo-router';
 import { SettingsListItem } from '@/core/components/ui/settingsListItem';
 import { useTranslation } from 'react-i18next';
 
@@ -32,6 +32,7 @@ export default function Home() {
 
   return (
     <React.Fragment>
+      <Stack.Screen options={{ title: t('homeSettings.title'), headerBackTitle: t('stack.back') }} />
       <View className="flex-1 pt-8 pb-10 px-8 gap-y-3">
         <Link href="/settings/profile" push asChild>
           <SettingsListItem

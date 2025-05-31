@@ -3,11 +3,14 @@ import React from 'react'
 import { MenuTitle } from '@/core/components/ui/typography'
 import { SettingsListItem } from '@/core/components/ui/settingsListItem'
 import { useTranslation } from 'react-i18next';
+import { Stack } from 'expo-router';
 
 export default function account() {
   const { t } = useTranslation();
+
   return (
     <React.Fragment>
+      <Stack.Screen options={{ title: t('accountSettings.title'), headerBackTitle: t('stack.back') }} />
       <View className="flex-1 pt-8 pb-10 px-8">
         <View className="gap-8">
           <View className="gap-4">
@@ -31,10 +34,7 @@ export default function account() {
             </MenuTitle>
             <SettingsListItem label={t('accountSettings.cardLabel')} value={t('accountSettings.addCreditCardValue')} />
           </View>
-
         </View>
-
-
       </View>
     </React.Fragment>
   )

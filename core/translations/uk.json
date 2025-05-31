@@ -109,6 +109,7 @@
     "publicProfileLabel": "Публічний профіль"
   },
   "homeSettings": {
+    "title": "Налаштування",
     "profileLabel": "Профіль",
     "accountLabel": "Обліковий запис",
     "privacyLabel": "Конфіденційність",
@@ -117,6 +118,7 @@
     "logoutLabel": "Вийти"
   },
   "accountSettings": {
+    "title": "Обліковий запис",
     "credentialsTitle": "Облікові дані",
     "emailLabel": "Електронна пошта",
     "passwordLabel": "Пароль",

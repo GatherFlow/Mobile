@@ -16,7 +16,7 @@ export default function Privacy() {
 
   return (
     <React.Fragment>
-
+      <Stack.Screen options={{ title: t('privacy.title'), headerBackTitle: t('stack.back') }} />
       <View className="flex-1 pt-8 pb-10 px-8">
         <View className="gap-y-3">
           <PrivacySettingRow
