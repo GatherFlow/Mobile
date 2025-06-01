@@ -11,7 +11,7 @@ interface ConfirmModalProps {
   message: string;
 }
 
-export function ConfirmModal({ visible, onClose, onConfirm, message }: ConfirmModalProps) {
+export default function ConfirmModal({ visible, onClose, onConfirm, message }: ConfirmModalProps) {
   const { t } = useTranslation();
   return (
     <Modal

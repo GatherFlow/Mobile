@@ -12,6 +12,7 @@
     "continue-with-google": "Продовжити Google",
     "login": "Увійти"
   },
+  "continue-with-google": "Продовжити з Google",
   "example": {
     "change-language": "Змінити мову"
   },
@@ -134,5 +135,11 @@
     "message": "Ви абсолютно впевнені?",
     "noButton": "Ні",
     "yesButton": "Так"
+  },
+  "validation": {
+    "invalid-email": "Пошта є обовʼязковою",
+    "invalid-password": "Пароль обовʼязковий",
+    "incorrect-identifier": "Введіть коректну пошту",
+    "incorrect-password": "Пароль має містити мінімум 6 символів"
   }
 }

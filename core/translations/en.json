@@ -15,6 +15,7 @@
   "example": {
     "change-language": "Change language"
   },
+  "continue-with-google": "Continue with Google",
   "signup": {
     "title": "Sign Up",
     "firstNameLabel": "First name",
@@ -134,5 +135,11 @@
     "message": "Are you absolutely sure?",
     "noButton": "No",
     "yesButton": "Yes"
+  },
+  "validation": {
+    "invalid-email": "Email is required",
+    "invalid-password": "Password is required",
+    "incorrect-identifier": "Email should have correct format",
+    "incorrect-password": "Password must be at least 6 characters long"
   }
 }

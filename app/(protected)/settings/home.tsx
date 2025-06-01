@@ -11,7 +11,7 @@ import { Earth } from '@/core/lib/icons/Earth';
 import { Podcast } from '@/core/lib/icons/Podcast';
 import { LogOut } from '@/core/lib/icons/LogOut';
 
-import { ConfirmModal } from '@/app/settings/confirmModal';
+import ConfirmModal from './confirmModal';
 
 export default function Home() {
   const { t } = useTranslation();
